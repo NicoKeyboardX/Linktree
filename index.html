@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nico Hofmann | Digital</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome für verbesserte Logos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-dark: #0a0512;
+            --lila-accent: #9d4edd;
+            --lila-light: #c77dff;
+            --glass: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(157, 78, 221, 0.3);
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: #ffffff;
+            font-family: 'Lora', serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+            background: radial-gradient(circle at top, #1b0a33 0%, #0a0512 80%);
+            background-attachment: fixed;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 380px;
+            text-align: center;
+        }
+
+        /* Profilbild Bereich */
+        .avatar-box {
+            margin-bottom: 30px;
+        }
+
+        .avatar-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--lila-accent);
+            padding: 5px;
+            box-shadow: 0 0 25px rgba(157, 78, 221, 0.4);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            margin: 10px 0;
+            letter-spacing: 1px;
+        }
+
+        .tag {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: var(--lila-light);
+            font-weight: 600;
+            opacity: 0.8;
+        }
+
+        /* --- Optimierte Knöpfe --- */
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 35px;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            padding: 16px 24px;
+            background: var(--glass);
+            border: 1px solid var(--glass-border);
+            border-radius: 14px;
+            color: #ffffff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Logo Styling */
+        .nav-item i {
+            font-size: 1.5rem;
+            width: 35px;
+            margin-right: 15px;
+            color: var(--lila-light);
+            display: flex;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-item span {
+            font-size: 1.1rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        /* Hover-Zustand */
+        .nav-item:hover {
+            background: rgba(157, 78, 221, 0.15);
+            border-color: var(--lila-accent);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(157, 78, 221, 0.2);
+        }
+
+        .nav-item:hover i {
+            transform: scale(1.15);
+            color: #ffffff;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-label {
+            font-size: 0.65rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .footer-name {
+            display: block;
+            margin-top: 4px;
+            color: var(--lila-accent);
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="avatar-box">
+            <img src="1000015681.jpg" alt="Nico Hofmann" class="avatar-img" onerror="this.src='https://ui-avatars.com/api/?name=Nico+Hofmann&background=4b2c5e&color=fff'">
+            <h1>Nico Hofmann</h1>
+            <span class="tag">Digital Identity</span>
+        </div>
+
+        <!-- Plattform-Links -->
+        <nav class="nav-links">
+            
+            <a href="https://x.com/Nicominecit" target="_blank" class="nav-item">
+                <i class="fa-brands fa-x-twitter"></i>
+                <span>X</span>
+            </a>
+
+            <a href="https://www.tiktok.com/@nicominecithedits?_r=1&_t=ZG-951yhQwVINV" target="_blank" class="nav-item">
+                <i class="fa-brands fa-tiktok"></i>
+                <span>TikTok</span>
+            </a>
+
+            <a href="https://www.instagram.com/n1co.3005?igsh=OGJ2amQwNm03ejU5" target="_blank" class="nav-item">
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+
+            <a href="https://www.facebook.com/share/14Zmj5P91bH/" target="_blank" class="nav-item">
+                <i class="fa-brands fa-facebook"></i>
+                <span>Facebook</span>
+            </a>
+
+        </nav>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-label">Verantwortlich für den Inhalt</div>
+            <div class="footer-name">Nico Hofmann</div>
+        </footer>
+    </div>
+
+</body>
+</html>
+
